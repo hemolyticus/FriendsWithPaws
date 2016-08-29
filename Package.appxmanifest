@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="3b981394-132d-49f1-a1c3-abd0beca29fb" Publisher="CN=MJ" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>FriendsWithPaws</DisplayName>
+    <PublisherDisplayName>MJ del Barrio(91023487)</PublisherDisplayName>
+    <Logo>Assets\storeLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="FriendsWithPaws.App">
+      <VisualElements DisplayName="Friends With Paws" Logo="Assets\logo.png" SmallLogo="Assets\smallLogo.png" Description="Friends With Paws" ForegroundText="light" BackgroundColor="#464646" ToastCapable="true">
+        <DefaultTile ShowName="allLogos" WideLogo="Assets\wideLogo.png" />
+        <SplashScreen Image="Assets\splashScreen.png" />
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.search" />
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
